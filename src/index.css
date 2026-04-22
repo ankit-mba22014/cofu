@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @layer base {
-
   html, body {
     background: #080808;
     color: #F0F0F0;
@@ -9,6 +8,10 @@
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
   }
 
   * {
@@ -27,4 +30,12 @@
     0%, 100% { transform: scale(1); opacity: 1; }
     50% { transform: scale(1.4); opacity: 0.5; }
   }
+}
+
+#root {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: #080808;
 }
